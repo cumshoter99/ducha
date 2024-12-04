@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twelfth Street Rag</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #e0f7fa;
+      margin: 0;
+      flex-direction: column;
+    }
+    img {
+      width: 300px;
+      height: auto;
+    }
+    h1 {
+      font-family: Arial, sans-serif;
+      color: #00796b;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>¡Bienvenido a la ducha!</h1>
+  <img src="https://via.placeholder.com/300x400.png?text=Ducha" alt="Ducha">
+  
+  <audio id="audio" muted loop>
+    <source src="https://rr4---sn-h5qzened.googlevideo.com/videoplayback?expire=1733361008&ei=EKlQZ7riI4uKkucPsd6-6Q4&ip=172.71.223.203&id=o-AOpfuaMeNKFcBcWlIEK4Bd5W8944S6PqGAttLPgcxdAg&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&rms=au%2Cau&bui=AQn3pFSVdCIINtZ0H0dLxb1k_pVZb_DAzZQtCOmZmhUozuq2ygJQvbyTrtW9yDCsZbDfyvN4iHSlC1l_&vprv=1&svpuc=1&mime=audio%2Fmp4&ns=tV-BmUzZIjmmyXRmYbID6jEQ&rqh=1&gir=yes&clen=2057479&dur=127.082&lmt=1720228526451540&keepalive=yes&lmw=1&fexp=24350590,24350655,24350675,24350705,24350737,51326932,51335594,51347746&c=TVHTML5&sefc=1&txp=5532434&n=3hV-bQ5sK844LA&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIgAVE8N5hVvMhrrjE3jzDrwMFtZv8zmhaQ8oFa3OOmbXsCIQCDVprwuHsrHJUGPfa9U9tHi_n3fpF2NyLcyDNBkX4V6A%3D%3D&from_cache=False&title=SpongeBob%20Production%20Music%20Twelfth%20Street%20Rag&redirect_counter=1&rm=sn-p5qeek7l&rrc=104&req_id=e5276c5bba18a3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&met=1733339414,&mh=TU&mip=79.146.180.109&mm=31&mn=sn-h5qzened&ms=au&mt=1733339112&mv=m&mvi=4&pl=20&lsparams=ipbypass,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=AGluJ3MwRQIhAI0g42LUuKLsSNTqxWFwRaJdZjqiPAG9Td3JqWt-mJKHAiBv4gkeRveO4_-HTo4Xc77nc0AAnOoB6Gt-CA31GYFj6w%3D%3D" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+  
+  <button onclick="activarSonido()">Activar sonido</button>
+
+  <script>
+    function activarSonido() {
+      const audio = document.getElementById('audio');
+      audio.muted = false;
+      audio.play();
+    }
+  </script>
+</body>
+</html>
